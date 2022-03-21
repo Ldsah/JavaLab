@@ -1,4 +1,4 @@
-package com.Instagram;
+package JavaLab;
 
 import java.util.Scanner;
 
