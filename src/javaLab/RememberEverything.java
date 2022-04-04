@@ -1,4 +1,4 @@
-package JavaLab;
+package javaLab;
 
 import java.io.IOException;
 import java.util.Scanner;
