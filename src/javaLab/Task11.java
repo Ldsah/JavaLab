@@ -15,29 +15,34 @@ public class Task11 {
         int length = scanner.nextInt();
 
         System.out.println("Введите высоту отверстия: ");
-        int high = scanner.nextInt();
+        int height = scanner.nextInt();
 
         System.out.println("Введите длину кирпича: ");
         int bricksLength = scanner.nextInt();
 
         System.out.println("Введите высоту кирпича: ");
-        int bricksHigh = scanner.nextInt();
+        int bricksHeight = scanner.nextInt();
 
         System.out.println("Введите ширину кирпича: ");
         int bricksWidth = scanner.nextInt();
 
-        if ((high == bricksHigh && length == bricksLength) || (high == bricksLength && length == bricksHigh)) {
-            System.out.println("Кирпич подходит!");
-        } else if (bricksWidth == high && (length == bricksLength || length == bricksHigh)) {
-            System.out.println("Кирпич подходит! ");
-        } else if ((bricksWidth == length) && (high == bricksLength || high == bricksHigh)) {
+        if ((height >= bricksHeight) &&
+                (length >= bricksWidth || length >= bricksLength)) {
             System.out.println("Кирпич подходит");
+        } else if ((height >= bricksLength) &&
+                (length >= bricksHeight || length >= bricksWidth)) {
+            System.out.println("Кирпич подходит");
+        } else if ((height >= bricksWidth) &&
+                (length >= bricksHeight || length >= bricksLength)) {
+            System.out.println("Кирпич подходит");
+        } else {
+            System.out.println("Кирпич не подходит");
         }
-
-//        if(high != bricksLength || high !=bricksHigh || high )
 
 
     }
+
+
 }
 
 
