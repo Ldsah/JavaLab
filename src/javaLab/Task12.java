@@ -19,7 +19,7 @@ public class Task12 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         System.out.print(first + ", " + second);
-        long next = 0;
+        long next;
         for (int i = 0; i < n; i++) {
             next = first + second;
             first = second;
