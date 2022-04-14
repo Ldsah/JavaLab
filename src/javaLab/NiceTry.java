@@ -18,14 +18,16 @@ import java.io.FileReader;
 
 public class NiceTry {
     public static void main(String[] args) {
-        try{
-            System.out.println("Должен вывести на экран");
-            FileReader fd = new FileReader("тэги");
-            System.out.println("Не должен скомпилироваться");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        System.out.println("Line1");
+        try {
+            throw new Exception("Try 1");
+            //System.out.println("Line 2"); не компилируется
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Line 3: inside catch clause");
+        } finally {
+            System.out.println("Line4: inside finally");
         }
+        System.out.println("Line 5");
     }
+
 }
