@@ -1,4 +1,4 @@
-package javaLab;
+package DONE;
 
 public class Alphabet {
     public static void main(String[] args) {

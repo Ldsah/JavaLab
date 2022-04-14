@@ -1,4 +1,4 @@
-package javaLab;
+package DONE;
 
 public class Dragon {
     String name;
