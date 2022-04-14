@@ -12,11 +12,20 @@ import java.util.Scanner;
 
 public class Task12 {
     public static void main(String[] args) {
-        int first = 1;
-        int second = 1;
+        long first = 1;
+        long second = 1;
 
-        System.out.println("Введите N-ое число Фибоначчи: ");
+        System.out.print("Введите число N: ");
         Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.print(first + ", " + second);
+        long next = 0;
+        for (int i = 0; i < n; i++) {
+            next = first + second;
+            first = second;
+            second = next;
+            System.out.print(", " + next);
+        }
 
     }
 
