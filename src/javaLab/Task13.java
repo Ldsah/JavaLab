@@ -1,8 +1,6 @@
 package javaLab;
 
-import java.util.Scanner;
-
-//        "Анализ Креативности Текста.
+//"Анализ Креативности Текста.
 //        Подсчитать количество слов и букв в строке. Слово - это последовательность символов, разделенных одним или
 //        несколькими символами-разделителями. Буква - это символ, не являющийся разеделителем.
 //        Разделители слов: пробел, табуляция, перевод каретки, знаки препинания. Полный список: "",.!?:;()""
@@ -17,12 +15,24 @@ import java.util.Scanner;
 //        5) ""xxx,xxxx""
 //        6) ""........""
 //        7) ""... xxx...  ""
-//        8) """" - пустая строка"
+//        8) """" - пустая строка
+
+import java.util.Scanner;
+
 public class Task13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
+        for (int i = 0; i < line.length(); i++) {
+            if(line.equals(" ")){
+                System.out.println("Empty string");
+           // }else if(""){
+
+            }
+
+        }
 
     }
+
 
 }
