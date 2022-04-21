@@ -23,14 +23,34 @@ public class Task13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
+        int countLetters = 0;
+        int countWords = 0;
+        boolean expectedChar = false;
+        boolean expectedSymbol = true;
         for (int i = 0; i < line.length(); i++) {
-            if(line.equals(" ")){
-                System.out.println("Empty string");
-           // }else if(""){
-
+            if (line.equals(" ")) {
+                System.out.println("Пустая строка");
+            } else if ((line.charAt(i) >= 1040 && line.charAt(i) <= 1103) || (line.charAt(i) >= 65
+                    && line.charAt(i) <= 122)) {
+                countLetters++;
+                expectedChar = true;
+            } else if (((line.charAt(i) == ',') || (line.charAt(i) == '.') || (line.charAt(i) == '!') ||
+                    (line.charAt(i) == '?') || (line.charAt(i) == ':') || (line.charAt(i) == ';') ||
+                    (line.charAt(i) == '(') || (line.charAt(i) == ')') || (line.charAt(i) == ' ')
+            )) {
+                expectedChar = false;
+                expectedSymbol = true;
             }
-
+            if(expectedChar&&expectedSymbol){
+                countWords++;
+                expectedSymbol = false;
+            }
         }
+        System.out.println("Количество букв: " + countLetters);
+        System.out.println("Количество слов: " + countWords);
+
+
+
 
     }
 
