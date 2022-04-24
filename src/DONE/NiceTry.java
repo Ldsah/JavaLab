@@ -1,4 +1,4 @@
-package javaLab;
+package DONE;
 
 //       "Хорошая попытка
 //        Отработка try-catch-finally-throw
