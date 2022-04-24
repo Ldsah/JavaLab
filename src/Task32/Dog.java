@@ -1,4 +1,4 @@
-package Arena;
+package Task32;
 
 import java.util.Random;
 
