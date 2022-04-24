@@ -2,14 +2,15 @@ package Arena;
 
 public class Arena {
     public static void main(String[] args) {
-        Dog rik = new Dog(500, "Rik");
-        Dog mik = new Dog(600, "Mik");
-        rik.setEnemy(mik);
-        rik.setPriority(Thread.MAX_PRIORITY);
-        mik.setPriority(Thread.MIN_PRIORITY);
-        mik.setEnemy(rik);
+        Person batman = new Person("Batman", 5000);
+        Person joker = new Person("Joker", 5000);
+        batman.setEnemy(joker);
+        joker.setEnemy(batman);
 
-        mik.start();
-        rik.start();
+        joker.start();
+        batman.start();
+
+
+
     }
 }
