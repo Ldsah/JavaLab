@@ -1,4 +1,4 @@
-package javaLab.heritage;
+package DONE.heritage;
 
 public class BaseWeightLength extends Base implements Weight, Length{
     public int getWeight(){

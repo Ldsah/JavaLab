@@ -1,4 +1,4 @@
-package javaLab.polymorphism;
+package DONE.polymorphism;
 
 public class Main {
 

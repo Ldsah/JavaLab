@@ -1,4 +1,4 @@
-package javaLab.heritage;
+package DONE.heritage;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package javaLab.heritage;
+package DONE.heritage;
 
 public interface Weight {
    int weight = 33;
