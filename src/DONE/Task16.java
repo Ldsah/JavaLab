@@ -1,4 +1,4 @@
-package javaLab;
+package DONE;
 
 //"Средний по больнице
 //        Разработать функцию, в которую передается в качестве аргументов массив типа float.
@@ -28,7 +28,7 @@ public class Task16 {
             for (int i = 0; i < array.length; i++) {
                 sum += array[i];
             }
-            result = sum/2;
+            result = sum/array.length;
         }
         return result;
     }

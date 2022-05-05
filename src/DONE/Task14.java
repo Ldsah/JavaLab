@@ -1,4 +1,4 @@
-package javaLab;
+package DONE;
 
 //"След матрицы
 //        Найти след матрицы,  след матрицы — сумма элементов главной диагонали. Размер матрицы вводит пользователь,
@@ -48,11 +48,9 @@ public class Task14 {
         }
 
         long result = 0; //след матрицы
-        int residue = matrixSize - 1;  //переменная для сохранения второго индекса матрицы, для движения по диагонали
 
         for (int i = 0; i < matrixSize; i++) {
-            result += matrix[i][residue]; //i - первый индекс матрицы
-            --residue; //уменьшение второго индекса матрицы
+            result += matrix[i][i]; //i - первый индекс матрицы
         }
 
         System.out.println(result);
