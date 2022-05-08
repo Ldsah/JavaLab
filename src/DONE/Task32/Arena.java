@@ -1,4 +1,4 @@
-package Task32;
+package DONE.Task32;
 
 public class Arena {
     public static void main(String[] args) {

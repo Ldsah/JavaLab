@@ -1,4 +1,4 @@
-package Task32;
+package DONE.Task32;
 
 import java.util.Random;
 
