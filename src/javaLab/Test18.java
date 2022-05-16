@@ -1,6 +1,7 @@
 package javaLab;
 
-import java.sql.Array;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class Test18 extends Task18 {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Test18 extends Task18 {
         lines[8] = " ";
 
         for (int i = 0; i < lines.length; i++) {
+
             System.out.print("Случай " + i + ": ");
             System.out.println(lines[i]);
             if (checkBracket(lines[i])) {

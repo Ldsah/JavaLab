@@ -24,7 +24,7 @@ public class Task18 {
 
     public static boolean checkBracket(String line) {
         Deque<Character> stack = new ArrayDeque<>();
-        boolean closingBracket = false;
+
 
         for (int i = 0; i < line.length(); i++) {
             if (line.charAt(i) == '(') {
@@ -33,13 +33,13 @@ public class Task18 {
                 if (stack.peekFirst() != null) {
                     stack.pollFirst();
                 } else {
-                    closingBracket = true;
+                    return false;
                 }
 
             }
         }
 
-        if (stack.pollFirst() != null || closingBracket) {
+        if (stack.pollFirst() != null) {
             return false;
         } else {
             return true;
