@@ -15,6 +15,45 @@ package javaLab;
 //Модифицировать введенный текст нельзя.
 //Создавать структуры сходного размера нельзя."
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+
 public class Task18 {
 
+
+    public static boolean checkBracket(String line) {
+        Deque<Character> stack = new ArrayDeque<>();
+        boolean closingBracket = false;
+
+        for (int i = 0; i < line.length(); i++) {
+            if (line.charAt(i) == '(') {
+                stack.push(line.charAt(i));
+            } else if (line.charAt(i) == ')') {
+                if (stack.peekFirst() != null) {
+                    stack.pollFirst();
+                } else {
+                    closingBracket = true;
+                }
+
+            }
+        }
+
+        if (stack.pollFirst() != null || closingBracket) {
+            return false;
+        } else {
+            return true;
+        }
+
+//        while(scanner.hasNext()) {
+//            String symbol = scanner.next();
+//            System.out.println(symbol);
+//        }
+//        scanner.close();
+//        System.out.println("Всё");
+
+    }
+
+
 }
+
